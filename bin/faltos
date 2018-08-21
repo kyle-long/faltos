@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+const neodoc = require('neodoc');
+const lib = require('../src');
+
+const usage = `
+    Usage:
+        faltos unfalcor [<fileName>]
+`;
+
+const args = neodoc.run(usage);
+lib.run(args);
